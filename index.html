@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Paulo Roberto Elias - Curriculo</title>
+  <title>Paulo Roberto Elias - Resume</title>
   <style>
     :root {
       --ink: #202124;
@@ -42,6 +42,35 @@
 
     .page {
       padding: 34px 42px 38px;
+    }
+
+    .language-switch {
+      display: flex;
+      justify-content: flex-end;
+      gap: 6px;
+      padding: 12px 42px 0;
+    }
+
+    .language-switch button {
+      min-width: 44px;
+      border: 1px solid var(--line);
+      background: var(--page);
+      color: var(--muted);
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 5px 10px;
+    }
+
+    .language-switch button[aria-pressed="true"] {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .resume-version[hidden] {
+      display: none;
     }
 
     header {
@@ -182,6 +211,10 @@
         padding: 24px 18px;
       }
 
+      .language-switch {
+        padding: 12px 18px 0;
+      }
+
       header,
       .job-head,
       .compact-grid,
@@ -216,6 +249,10 @@
         width: 100%;
         border: 0;
         box-shadow: none;
+      }
+
+      .language-switch {
+        display: none;
       }
 
       .page {
@@ -268,7 +305,12 @@
 </head>
 <body>
   <main>
-    <article class="page">
+    <nav class="language-switch" aria-label="Language selection">
+      <button type="button" data-language-button="pt" aria-pressed="true">PT</button>
+      <button type="button" data-language-button="en" aria-pressed="false">EN</button>
+    </nav>
+
+    <article class="page resume-version" id="resume-pt" lang="pt-BR" data-language="pt">
       <header>
         <div>
           <h1>Paulo Roberto Elias</h1>
@@ -456,24 +498,263 @@
 
       <footer class="footer-note">
         Para verificar atualizações desse documento visite: <a href="https://resume.paulorobertoelias.com.br">resume.paulorobertoelias.com.br</a><br>
-        <span id="print-date"></span>
+        <span data-print-date></span>
+      </footer>
+    </article>
+
+    <article class="page resume-version" id="resume-en" lang="en" data-language="en" hidden>
+      <header>
+        <div>
+          <h1>Paulo Roberto Elias</h1>
+          <p class="role">Systems Analyst Developer | .NET Software Engineer | Product Owner | Scrum Master | DBA</p>
+        </div>
+        <p class="contact">
+          Piracicaba, Sao Paulo, Brazil<br>
+          +55 19 98141-8586<br>
+          <a href="mailto:elias.pauloroberto@gmail.com">elias.pauloroberto@gmail.com</a><br>
+          <a href="https://paulorobertoelias.com.br/">paulorobertoelias.com.br</a><br>
+          <a href="https://linkedin.com/in/paulo-roberto-elias/">linkedin.com/in/paulo-roberto-elias</a><br>
+          <a href="https://github.com/PRElias">github.com/PRElias</a>
+        </p>
+      </header>
+
+      <section>
+        <h2>Summary</h2>
+        <p class="summary">Technology professional with more than 10 years of experience in software development, requirements analysis, data, production support and Agile project management. Background in web systems, integrations, APIs, jobs, ETL, relational databases and corporate products in Brazilian and international environments. Strong experience with C#/.NET, SQL Server, Oracle, functional and technical documentation, testing, stakeholder communication and Agile ceremonies. Fluent English for meetings, presentations and collaboration with global teams.</p>
+      </section>
+
+      <section>
+        <h2>Core skills</h2>
+        <ul class="skills">
+          <li>C#, .NET/.NET Core, APIs, jobs, JSON, XML and integrations.</li>
+          <li>SQL Server, Oracle, PostgreSQL, MySQL, data modelling and performance.</li>
+          <li>Stored procedures, triggers, views, ETL and Business Intelligence.</li>
+          <li>Requirements, technical/functional documentation and user stories.</li>
+          <li>Scrum, Kanban, Jira, backlog, sprint backlog and estimation.</li>
+          <li>Unit testing, automated testing, Postman and SoapUI.</li>
+          <li>Git, GitLab, SVN, DevOps practices and continuous integration.</li>
+          <li>Fluent English and communication with global stakeholders.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Professional experience</h2>
+
+        <div class="job">
+          <div class="job-head">
+            <div>
+              <h3>GATEC / Senior Sistemas</h3>
+              <div class="job-title">Software Development Analyst</div>
+            </div>
+            <div class="date">Sep 2020 - present</div>
+          </div>
+          <ul>
+            <li>Development and support of SimpleFarm Web, a .NET-based solution used in international projects.</li>
+            <li>Worked on backend, frontend, integrations, support, issue analysis and continuous product evolution.</li>
+            <li>Led meetings, presentations and alignment sessions in English with stakeholders and international teams.</li>
+            <li>Collaborated in an Agile environment, supporting refinement, requirements understanding, technical prioritisation and feature delivery.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <div>
+              <h3>Coplacana</h3>
+              <div class="job-title">Software Development Analyst</div>
+            </div>
+            <div class="date">May 2020 - Aug 2020</div>
+          </div>
+          <ul>
+            <li>Provided technical coordination and developed internal tools to improve corporate processes.</li>
+            <li>Implemented a GitLab server for source control organisation and support for continuous integration practices.</li>
+            <li>Developed Service Desk, BI ETL, self-service, document template solutions and supported third-party systems.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <div>
+              <h3>Luxfacta</h3>
+              <div class="job-title">Requirements Analyst</div>
+            </div>
+            <div class="date">Nov 2017 - May 2020</div>
+          </div>
+          <ul>
+            <li>Worked on web and mobile projects for clients such as Ambev, AB-InBev and FIAT FCA, covering the full delivery lifecycle in English.</li>
+            <li>Gathered, documented and refined requirements, supporting estimation, prioritisation and delivery follow-up.</li>
+            <li>Developed and maintained SQL Server, PostgreSQL and Oracle structures, including stored procedures, views and triggers.</li>
+            <li>Supported Agile team management using Jira and Kanban.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <div>
+              <h3>Raizen</h3>
+              <div class="job-title">Functional Analyst, allocated by SUM Services</div>
+            </div>
+            <div class="date">Apr 2013 - May 2017</div>
+          </div>
+          <ul>
+            <li>Functional owner for solutions across 8 production systems serving different business areas.</li>
+            <li>Gathered requirements, produced documentation, followed up with clients and supported the development team directly.</li>
+            <li>Participated in the full delivery lifecycle, including testing, deployment, production support, backlog and sprint backlog management.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <div>
+              <h3>Grupo Sinal</h3>
+              <div class="job-title">Systems Analyst</div>
+            </div>
+            <div class="date">Sep 2012 - Apr 2013</div>
+          </div>
+          <ul>
+            <li>Supported the APDATA system, developed an internal purchasing system in PHP and migrated data from MySQL to SQL Server.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <div>
+              <h3>GRSA</h3>
+              <div class="job-title">Systems Analyst</div>
+            </div>
+            <div class="date">Dec 2010 - Sep 2012</div>
+          </div>
+          <ul>
+            <li>Technical owner for APDATA HR system support, including workflow, security, reports and internal configuration projects.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <div>
+              <h3>Luxfacta</h3>
+              <div class="job-title">.NET Developer</div>
+            </div>
+            <div class="date">Sep 2010 - Nov 2010</div>
+          </div>
+          <ul>
+            <li>.NET development for Bradesco's intranet restructuring project.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <div>
+              <h3>Apdata</h3>
+              <div class="job-title">Systems Analyst</div>
+            </div>
+            <div class="date">Jul 2009 - Aug 2010</div>
+          </div>
+          <ul>
+            <li>Product work and second-level support, with modelling and definitions for a system using Oracle, SQL Server and internal development languages.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <div>
+              <h3>SEMAE - Municipal Water and Sewage Service of Piracicaba</h3>
+              <div class="job-title">Customer Service Agent</div>
+            </div>
+            <div class="date">May 2003 - Sep 2009</div>
+          </div>
+          <ul>
+            <li>In-person customer service, internal process improvements, productivity tools and leadership participation in the first version of the organisation's website.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="compact-grid">
+        <div>
+          <h2>Education</h2>
+          <ul>
+            <li>Postgraduate degree in Software Engineering, Claretianas, 2018.</li>
+            <li>Bachelor's degree in Business Administration, UNIMEP, 2007.</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Courses and languages</h2>
+          <ul>
+            <li>C# Intermediate, Udemy, 2017.</li>
+            <li>Software Architecture Analysis and Design, IGTI, 2016.</li>
+            <li>Oracle PL/SQL, EN-SOF, 2011.</li>
+            <li>JavaScript, Impacta, 2010.</li>
+            <li>Fluent professional and technical English.</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="footer-note">
+        To check updates to this document, visit: <a href="https://resume.paulorobertoelias.com.br">resume.paulorobertoelias.com.br</a><br>
+        <span data-print-date></span>
       </footer>
     </article>
   </main>
   <script>
     (function () {
-      var footerDate = document.getElementById('print-date');
-      if (!footerDate) {
-        return;
+      var buttons = Array.prototype.slice.call(document.querySelectorAll('[data-language-button]'));
+      var resumes = Array.prototype.slice.call(document.querySelectorAll('[data-language]'));
+
+      function getSavedLanguage() {
+        try {
+          return localStorage.getItem('resume-language');
+        } catch (error) {
+          return null;
+        }
       }
 
-      var formattedDate = new Intl.DateTimeFormat('pt-BR', {
-        day: '2-digit',
-        month: '2-digit',
-        year: 'numeric'
-      }).format(new Date());
+      function saveLanguage(language) {
+        try {
+          localStorage.setItem('resume-language', language);
+        } catch (error) {
+          return;
+        }
+      }
 
-      footerDate.textContent = 'Impresso em ' + formattedDate;
+      function formatDate(language) {
+        var locale = language === 'en' ? 'en-US' : 'pt-BR';
+        return new Intl.DateTimeFormat(locale, {
+          day: '2-digit',
+          month: '2-digit',
+          year: 'numeric'
+        }).format(new Date());
+      }
+
+      function updateDates(language) {
+        var text = language === 'en' ? 'Printed on ' : 'Impresso em ';
+        document.querySelectorAll('[data-print-date]').forEach(function (element) {
+          element.textContent = text + formatDate(language);
+        });
+      }
+
+      function setLanguage(language) {
+        var selectedLanguage = language === 'en' ? 'en' : 'pt';
+
+        resumes.forEach(function (resume) {
+          resume.hidden = resume.getAttribute('data-language') !== selectedLanguage;
+        });
+
+        buttons.forEach(function (button) {
+          button.setAttribute('aria-pressed', String(button.getAttribute('data-language-button') === selectedLanguage));
+        });
+
+        document.documentElement.lang = selectedLanguage === 'en' ? 'en' : 'pt-BR';
+        document.title = selectedLanguage === 'en' ? 'Paulo Roberto Elias - Resume' : 'Paulo Roberto Elias - Curriculo';
+        updateDates(selectedLanguage);
+        saveLanguage(selectedLanguage);
+      }
+
+      buttons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          setLanguage(button.getAttribute('data-language-button'));
+        });
+      });
+
+      setLanguage(getSavedLanguage() || 'pt');
     }());
   </script>
 </body>

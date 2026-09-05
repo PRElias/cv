@@ -29,7 +29,7 @@ Profissional de tecnologia com mais de 10 anos de experiência em desenvolviment
 ### GATEC / Senior Sistemas
 
 **Analista de Desenvolvimento**  
-Setembro de 2020 ate o momento
+Setembro de 2020 até o momento
 
 - Desenvolvimento e sustentação da solução SimpleFarm Web, construída em plataforma .NET e utilizada em projetos internacionais.
 - Atuação em demandas de backend, frontend, integrações, suporte, análise de problemas e evolução contínua do produto.
@@ -119,9 +119,9 @@ Maio de 2003 a setembro de 2009
 
 - C# Intermediate, Udemy, 2017.
 - Análise e Desenho de Arquitetura de Software, IGTI, 2016.
-- Programação Oracle PL/SQL Modulo I, EN-SOF, 2011.
+- Programação Oracle PL/SQL Módulo I, EN-SOF, 2011.
 - JavaScript, Impacta, 2010.
-- Formação DBA Oracle 10g Modulo I, Senac, 2009.
+- Formação DBA Oracle 10g Módulo I, Senac, 2009.
 
 ## Idiomas
 
