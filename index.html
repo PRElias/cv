@@ -168,6 +168,10 @@
       font-size: 0.82rem;
     }
 
+    .print-date {
+      display: none;
+    }
+
     @media (max-width: 720px) {
       body {
         padding: 0;
@@ -219,7 +223,7 @@
       }
 
       .page {
-        padding: 0;
+        padding: 0 0 10mm;
       }
 
       a {
@@ -263,11 +267,21 @@
       ul {
         margin-top: 3px;
       }
+
+      .print-date {
+        display: block;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        color: var(--muted);
+        font-size: 8.2pt;
+      }
     }
   </style>
 </head>
 <body>
   <main>
+    <div id="print-date" class="print-date" aria-hidden="true"></div>
     <article class="page">
       <header>
         <div>
@@ -459,5 +473,21 @@
       </footer>
     </article>
   </main>
+  <script>
+    (function () {
+      var printDate = document.getElementById('print-date');
+      if (!printDate) {
+        return;
+      }
+
+      var formattedDate = new Intl.DateTimeFormat('pt-BR', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric'
+      }).format(new Date());
+
+      printDate.textContent = 'Impresso em ' + formattedDate;
+    }());
+  </script>
 </body>
 </html>
