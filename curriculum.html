@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paulo Roberto Elias - Curriculo</title>
+  <style>
+    :root {
+      --ink: #202124;
+      --muted: #5f6368;
+      --line: #d6d9de;
+      --panel: #f6f8fa;
+      --accent: #0b6bcb;
+      --accent-ink: #084b8f;
+      --page: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: #e8eaed;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.42;
+    }
+
+    body {
+      margin: 0;
+      padding: 28px;
+    }
+
+    main {
+      width: min(100%, 920px);
+      margin: 0 auto;
+      background: var(--page);
+      border: 1px solid var(--line);
+      box-shadow: 0 12px 36px rgba(32, 33, 36, 0.12);
+    }
+
+    .page {
+      padding: 34px 42px 38px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      padding-bottom: 18px;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    h1 {
+      margin: 0 0 5px;
+      color: #111827;
+      font-size: 2rem;
+      line-height: 1.05;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .role {
+      margin: 0;
+      color: var(--accent-ink);
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .contact {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.86rem;
+      line-height: 1.45;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    a {
+      color: var(--accent-ink);
+      text-decoration: none;
+    }
+
+    section {
+      margin-top: 18px;
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      color: #111827;
+      font-size: 0.86rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 4px;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.25;
+    }
+
+    p {
+      margin: 0 0 8px;
+    }
+
+    ul {
+      margin: 6px 0 0;
+      padding-left: 18px;
+    }
+
+    li {
+      margin: 3px 0;
+    }
+
+    .summary {
+      font-size: 0.96rem;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 24px;
+      margin-top: 8px;
+      padding-left: 18px;
+    }
+
+    .job {
+      break-inside: avoid;
+      margin-top: 12px;
+    }
+
+    .job-head {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      align-items: baseline;
+    }
+
+    .job-title {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .date {
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .compact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 24px;
+    }
+
+    .note {
+      margin-top: 18px;
+      padding: 10px 12px;
+      background: var(--panel);
+      border-left: 3px solid var(--accent);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 720px) {
+      body {
+        padding: 0;
+      }
+
+      main {
+        border: 0;
+        box-shadow: none;
+      }
+
+      .page {
+        padding: 24px 18px;
+      }
+
+      header,
+      .job-head,
+      .compact-grid,
+      .skills {
+        grid-template-columns: 1fr;
+      }
+
+      .contact,
+      .date {
+        text-align: left;
+        white-space: normal;
+      }
+    }
+
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+
+    @media print {
+      html,
+      body {
+        background: #fff;
+        font-size: 10.6pt;
+      }
+
+      body {
+        padding: 0;
+      }
+
+      main {
+        width: 100%;
+        border: 0;
+        box-shadow: none;
+      }
+
+      .page {
+        padding: 0;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      section {
+        margin-top: 11px;
+      }
+
+      h1 {
+        font-size: 20pt;
+      }
+
+      h2 {
+        font-size: 8.8pt;
+        margin-bottom: 5px;
+      }
+
+      h3 {
+        font-size: 10.6pt;
+      }
+
+      .role {
+        font-size: 10.2pt;
+      }
+
+      .contact,
+      .date,
+      .job-title,
+      .note {
+        font-size: 8.6pt;
+      }
+
+      p,
+      li {
+        margin-top: 0;
+        margin-bottom: 2px;
+      }
+
+      ul {
+        margin-top: 3px;
+      }
+
+      .note {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="page">
+      <header>
+        <div>
+          <h1>Paulo Roberto Elias</h1>
+          <p class="role">Analista Desenvolvedor de Sistemas | Software Engineer .NET | Product Owner | Scrum Master | DBA</p>
+        </div>
+        <p class="contact">
+          Piracicaba, Sao Paulo<br>
+          (19) 98141-8586<br>
+          <a href="mailto:elias.pauloroberto@gmail.com">elias.pauloroberto@gmail.com</a><br>
+          <a href="https://paulorobertoelias.com.br/">paulorobertoelias.com.br</a><br>
+          <a href="https://linkedin.com/in/paulo-roberto-elias/">linkedin.com/in/paulo-roberto-elias</a><br>
+          <a href="https://github.com/PRElias">github.com/PRElias</a>
+        </p>
+      </header>
+
+      <section>
+        <h2>Resumo</h2>
+        <p class="summary">Profissional de tecnologia com mais de 10 anos de experiencia em desenvolvimento, analise de requisitos, dados, sustentacao e gestao agil de projetos. Atuacao em sistemas web, integracoes, APIs, jobs, ETL, bancos relacionais e produtos corporativos em ambientes nacionais e internacionais. Forte experiencia com C#/.NET, SQL Server, Oracle, documentacao funcional e tecnica, testes, comunicacao com stakeholders e conducao de rituais ageis. Ingles fluente para reunioes, apresentacoes e colaboracao com times globais.</p>
+      </section>
+
+      <section>
+        <h2>Competencias principais</h2>
+        <ul class="skills">
+          <li>C#, .NET/.NET Core, APIs, jobs, JSON, XML e integracoes.</li>
+          <li>SQL Server, Oracle, PostgreSQL, MySQL, modelagem e performance.</li>
+          <li>Procedures, triggers, views, ETL e Business Intelligence.</li>
+          <li>Requisitos, documentacao tecnica/funcional e user stories.</li>
+          <li>Scrum, Kanban, Jira, backlog, sprint backlog e estimativas.</li>
+          <li>Testes unitarios, automatizados, Postman e SoapUI.</li>
+          <li>Git, GitLab, SVN, DevOps e integracao continua.</li>
+          <li>Ingles fluente e interface com stakeholders globais.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Experiencia profissional</h2>
+
+        <div class="job">
+          <div class="job-head">
+            <div>
+              <h3>GATEC / Senior Sistemas</h3>
+              <div class="job-title">Analista de Desenvolvimento</div>
+            </div>
+            <div class="date">Set 2020 - atual</div>
+          </div>
+          <ul>
+            <li>Desenvolvimento e sustentacao da solucao SimpleFarm Web, construida em plataforma .NET e utilizada em projetos internacionais.</li>
+            <li>Atuacao em demandas de backend, frontend, integracoes, suporte, analise de problemas e evolucao continua do produto.</li>
+            <li>Conducao de reunioes, apresentacoes e alinhamentos em ingles com stakeholders e times internacionais.</li>
+            <li>Colaboracao em ambiente agil, apoiando refinamento, entendimento de requisitos, priorizacao tecnica e entrega de funcionalidades.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <div>
+              <h3>Coplacana</h3>
+              <div class="job-title">Analista de Desenvolvimento</div>
+            </div>
+            <div class="date">Mai 2020 - Ago 2020</div>
+          </div>
+          <ul>
+            <li>Coordenacao tecnica e desenvolvimento de ferramentas internas para melhoria de processos corporativos.</li>
+            <li>Implantacao de servidor GitLab para versionamento e apoio a praticas de integracao continua.</li>
+            <li>Desenvolvimento de Service Desk, ETL de BI, autoatendimento, templates de documentos e sustentacao de sistemas de terceiros.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <div>
+              <h3>Luxfacta</h3>
+              <div class="job-title">Analista de Requisitos</div>
+            </div>
+            <div class="date">Nov 2017 - Mai 2020</div>
+          </div>
+          <ul>
+            <li>Projetos web e mobile para clientes como Ambev, AB-InBev e FIAT FCA, com atuacao no ciclo completo em ingles.</li>
+            <li>Levantamento, documentacao e refinamento de requisitos, apoio a estimativas, priorizacao e acompanhamento de entregas.</li>
+            <li>Desenvolvimento e manutencao em SQL Server, PostgreSQL e Oracle, incluindo procedures, views e triggers.</li>
+            <li>Apoio a gestao de equipes ageis com Jira e Kanban.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <div>
+              <h3>Raizen</h3>
+              <div class="job-title">Analista Funcional, a servico da SUM Services</div>
+            </div>
+            <div class="date">Abr 2013 - Mai 2017</div>
+          </div>
+          <ul>
+            <li>Responsavel funcional por solucoes em 8 sistemas em producao, atendendo diferentes areas de negocio.</li>
+            <li>Coleta de requisitos, documentacao, acompanhamento com clientes e apoio direto a equipe de desenvolvimento.</li>
+            <li>Participacao no ciclo completo de entrega, incluindo testes, implantacao, sustentacao, backlog e sprint backlog.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <div>
+              <h3>Grupo Sinal</h3>
+              <div class="job-title">Analista de Sistemas</div>
+            </div>
+            <div class="date">Set 2012 - Abr 2013</div>
+          </div>
+          <ul>
+            <li>Suporte ao sistema APDATA, desenvolvimento de sistema interno de compras em PHP e migracao de MySQL para SQL Server.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <div>
+              <h3>GRSA</h3>
+              <div class="job-title">Analista de Sistemas</div>
+            </div>
+            <div class="date">Dez 2010 - Set 2012</div>
+          </div>
+          <ul>
+            <li>Responsavel tecnico pelo suporte ao sistema de RH APDATA, com configuracao de workflow, seguranca, relatorios e projetos internos.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <div>
+              <h3>Luxfacta</h3>
+              <div class="job-title">Programador .NET</div>
+            </div>
+            <div class="date">Set 2010 - Nov 2010</div>
+          </div>
+          <ul>
+            <li>Desenvolvimento .NET no projeto de reestruturacao da intranet do Bradesco.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <div>
+              <h3>Apdata</h3>
+              <div class="job-title">Analista de Sistemas</div>
+            </div>
+            <div class="date">Jul 2009 - Ago 2010</div>
+          </div>
+          <ul>
+            <li>Produto e suporte de segundo nivel, com modelagem e definicoes para sistema com Oracle, SQL Server e linguagens internas.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <div>
+              <h3>SEMAE - Servico Municipal de Agua e Esgoto de Piracicaba</h3>
+              <div class="job-title">Agente Comercial</div>
+            </div>
+            <div class="date">Mai 2003 - Set 2009</div>
+          </div>
+          <ul>
+            <li>Atendimento presencial, melhorias de processos internos, ferramentas de produtividade e participacao de lideranca na primeira versao do site.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="compact-grid">
+        <div>
+          <h2>Formacao</h2>
+          <ul>
+            <li>Pos-graduacao em Engenharia de Software, Claretianas, 2018.</li>
+            <li>Bacharelado em Administracao de Empresas, UNIMEP, 2007.</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Cursos e idiomas</h2>
+          <ul>
+            <li>C# Intermediate, Udemy, 2017.</li>
+            <li>Arquitetura de Software, IGTI, 2016.</li>
+            <li>Oracle PL/SQL, EN-SOF, 2011.</li>
+            <li>JavaScript, Impacta, 2010.</li>
+            <li>Ingles fluente tecnico e profissional.</li>
+          </ul>
+        </div>
+      </section>
+
+    </article>
+  </main>
+</body>
+</html>
